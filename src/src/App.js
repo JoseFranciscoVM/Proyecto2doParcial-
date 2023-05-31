@@ -1,5 +1,4 @@
 import React from "react";
-import './App.css';
 import { Route, Routes } from "react-router-dom";
 import { Login } from "./components/Login";
 import { Register } from "./components/Register";
@@ -10,7 +9,7 @@ import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
-    <div className="">
+    <div className="bg-slate-300 text-black h-screen flex text-white">
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<Login />} />
